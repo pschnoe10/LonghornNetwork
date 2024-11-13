@@ -18,7 +18,7 @@ This project simulates a social network called **Longhorn Network**, where stude
 
 #### Folder Structure
 - `src/`: Contains the main code files.
-- `input_sample.txt`: Sample input file format.
+- `testing/`: Contains `input_sample.txt` and `output_sample.txt`: Sample input and output file format.
 - `README.md`: Project instructions.
 
 #### Prerequisites
