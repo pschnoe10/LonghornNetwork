@@ -35,12 +35,51 @@ This project simulates a social network called **Longhorn Network**, where stude
    ```bash
    git clone https://github.com/ayushroychowdhury/LonghornNetwork.git
 
-### Step 2: Implementing Core Components
+---
 
-- **Data Parsing**: Implement `parseStudents` in `DataParser.java` to read from `input.txt` and create `UniversityStudent` objects.
-- **Student and UniversityStudent Classes**: Extend `Student.java` to create a `UniversityStudent` class that calculates connection strengths.
-- **Roommate Matching with Gale-Shapley**: Use the provided `GaleShapley.java` to complete roommate matching.
-- **Pod Formation**: Implement `PodFormation.java` to use Prim’s algorithm to form pods.
-- **Referral Path Finding**: Implement `ReferralPathFinder.java` to use Dijkstra’s algorithm for referral path finding.
-- **Multithreading**: Complete `FriendRequestThread.java` and `ChatThread.java` to simulate real-time student interactions.
+### Step 2: Generate UML Diagram and Javadoc
+
+- **Generate UML Diagram**:
+  - Create a UML diagram based on the class and method signatures.
+  - Include core relationships between classes, such as inheritance, aggregation, and associations.
+  
+- **Write Javadoc**:
+  - Generate Javadoc comments for each class and method based on the provided signatures.
+  - Include descriptions of parameters and return types.
+
+---
+
+### Step 3: Implement Core Components
+
+- **Data Parsing (DataParser.java)**:
+  - Implement `parseStudents` to read from an input file and create `UniversityStudent` objects.
+  - Validate input and handle exceptions as needed.
+
+- **Student Class and Subclass**:
+  - Implement the `Student` class with required attributes and the abstract method `calculateConnectionStrength`.
+  - Extend `Student` to create `UniversityStudent` with methods specific to calculating connection strengths.
+
+- **Roommate Matching (GaleShapley.java)**:
+  - Use the provided Gale-Shapley method signature to match roommates based on preferences.
+  - Implement and verify stable pairing results.
+
+- **Pod Formation (PodFormation.java)**:
+  - Implement Prim’s algorithm to form pods with minimized total connection weights.
+  - Update each student’s pod attribute.
+
+- **Referral Path Finding (ReferralPathFinder.java)**:
+  - Use Dijkstra’s algorithm to find the shortest path to a student who interned at a specific company.
+  - Include functionality for user input to specify the target company.
+
+- **Multithreading for Interactions (FriendRequestThread.java and ChatThread.java)**:
+  - Implement multithreading to simulate friend requests and chatting between students.
+  - Use Java’s synchronization mechanisms to ensure thread-safe operations on shared resources.
+
+---
+
+### Step 4: Testing and Validation
+
+- **Sample Input**: Run the provided sample input file (`input_sample.txt`) through the program.
+- **Verify Output**: Check that the roommate matching, pod formation, and referral path results align with the expected output in `output_sample.txt`.
+- **Edge Cases**: Test additional edge cases, such as students with no roommate preferences, missing data, and multithreading interaction.
 
