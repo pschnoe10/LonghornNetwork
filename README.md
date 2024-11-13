@@ -33,7 +33,7 @@ This project simulates a social network called **Longhorn Network**, where stude
 1. **Fork** this repository to start working on your own copy.
 2. **Clone** the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/LonghornNetwork.git
+   git clone [https://github.com/yourusername/LonghornNetwork.git](https://github.com/ayushroychowdhury/LonghornNetwork.git)
 
 ### Step 2: Implementing Core Components
 
