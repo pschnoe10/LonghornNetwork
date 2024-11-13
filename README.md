@@ -22,9 +22,9 @@ This project simulates a social network called **Longhorn Network**, where stude
 - `README.md`: Project instructions.
 
 #### Prerequisites
-- **Java** (version X.X)
+- **Java**
 - Basic knowledge of graph algorithms, threading, and file I/O.
-
+- If you are unfamiliar with Gale-Shapley, you will find [these resources] (https://www.sanfoundry.com/java-program-gale-shapley-algorithm/) helpful. 
 ---
 
 ### Instructions
