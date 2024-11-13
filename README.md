@@ -34,7 +34,6 @@ This project simulates a social network called **Longhorn Network**, where stude
 2. **Clone** the repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/LonghornNetwork.git
-  '''
 
 ### Step 2: Implementing Core Components
 
