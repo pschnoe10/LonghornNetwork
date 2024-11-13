@@ -35,3 +35,13 @@ This project simulates a social network called **Longhorn Network**, where stude
    ```bash
    git clone https://github.com/yourusername/LonghornNetwork.git
   '''
+
+### Step 2: Implementing Core Components
+
+- **Data Parsing**: Implement `parseStudents` in `DataParser.java` to read from `input.txt` and create `UniversityStudent` objects.
+- **Student and UniversityStudent Classes**: Extend `Student.java` to create a `UniversityStudent` class that calculates connection strengths.
+- **Roommate Matching with Gale-Shapley**: Use the provided `GaleShapley.java` to complete roommate matching.
+- **Pod Formation**: Implement `PodFormation.java` to use Prim’s algorithm to form pods.
+- **Referral Path Finding**: Implement `ReferralPathFinder.java` to use Dijkstra’s algorithm for referral path finding.
+- **Multithreading**: Complete `FriendRequestThread.java` and `ChatThread.java` to simulate real-time student interactions.
+
