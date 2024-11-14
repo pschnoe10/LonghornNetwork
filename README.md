@@ -37,7 +37,7 @@ This project simulates a social network called **Longhorn Network**, where stude
 
 ---
 
-### Step 2: Generate UML Diagram and Javadoc, DUE DATE: Nov 22nd, 2024 11:59pm
+### Step 2: Generate UML Diagram and Javadoc, DUE DATE: Nov 20th, 2024 11:59pm
 
 - **Generate UML Diagram**:
   - Create a UML diagram based on the class and method signatures.
