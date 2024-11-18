@@ -34,19 +34,20 @@ This project simulates a social network called **Longhorn Network**, where stude
 2. **Clone** the repository to your local machine:
    ```bash
    git clone https://github.com/ayushroychowdhury/LonghornNetwork.git
+3. **Create a branch with your name and push to that branch**, DO NOT COMMIT OR PUSH TO MAIN
 
 ---
 
-### Step 2: Generate UML Diagram and Javadoc, DUE DATE: Nov 20th, 2024 11:59pm
+### Step 2: Generate UML Diagram, State Diagram and Javadoc, DUE DATE: Nov 20th, 2024 11:59pm
 
-- **Generate UML Diagram**:
+- **Generate UML Diagram and State Diagram**:
   - Create a UML diagram based on the class and method signatures.
   - Include core relationships between classes, such as inheritance, aggregation, and associations.
+  - For the state diagram show the behavior of Longhorn Network, and how each interaction from the core components will occur.
   
 - **Write Javadoc**:
   - Generate Javadoc comments for each class and method based on the provided signatures.
   - Include descriptions of parameters and return types.
-
 ---
 
 ### Step 3: Implement Core Components
