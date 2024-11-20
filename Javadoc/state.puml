@@ -1,0 +1,39 @@
+@startuml
+skinparam backgroundColor #EEEBDC
+skinparam state {
+    BackgroundColor LightBlue
+    FontColor Black
+    BorderColor Black
+}
+
+[*] --> Idle
+
+state Idle {
+    [*] --> WaitingForInput
+    WaitingForInput --> ParsingData : User submits data
+    WaitingForInput --> EstablishingConnection : User initiates interaction
+}
+
+Idle --> ParsingData : User uploads input
+ParsingData --> DataParsed : Parsing complete
+DataParsed --> Idle : Ready for new input
+
+Idle --> EstablishingConnection : User sends request
+EstablishingConnection --> CommunicationActive : Connection established
+CommunicationActive --> AssigningRoommates : Request for roommate assignment
+CommunicationActive --> FormingPods : Request for pod formation
+CommunicationActive --> ReferralPathProcessing : Request for referral path
+CommunicationActive --> Idle : Interaction ends
+
+state CommunicationActive {
+    [*] --> SendingMessage
+    SendingMessage --> ReceivingMessage : Message sent
+    ReceivingMessage --> SendingMessage : Reply sent
+    ReceivingMessage --> Idle : End of communication
+}
+
+AssigningRoommates --> Idle : Roommates assigned
+FormingPods --> Idle : Pods formed
+ReferralPathProcessing --> Idle : Referral path found
+
+@enduml

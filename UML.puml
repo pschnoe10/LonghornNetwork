@@ -1,0 +1,51 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' Classes and methods
+class ChatThread {
+    +ChatThread(UniversityStudent sender, UniversityStudent receiver, String message)
+    +run()
+}
+
+class DataParser {
+    +parseStudents(String filename) : void
+}
+
+class FriendRequestThread {
+    +FriendRequestThread(UniversityStudent sender, UniversityStudent receiver)
+    +run()
+}
+
+class GaleShapley {
+    +assignRoommates(List<UniversityStudent> students) : void
+}
+
+class Main {
+    +main(String[] args) : void
+}
+
+class PodFormation {
+    +PodFormation(StudentGraph graph)
+    +formPods(int podSize) : void
+}
+
+class ReferralPathFinder {
+    +ReferralPathFinder(StudentGraph graph)
+    +findReferralPath(UniversityStudent start, String targetCompany) : void
+}
+
+class Student {
+}
+
+class UniversityStudent {
+}
+
+' Relationships
+UniversityStudent --|> Student : extends
+ChatThread --> UniversityStudent : uses
+FriendRequestThread --> UniversityStudent : uses
+GaleShapley --> UniversityStudent : uses
+ReferralPathFinder --> StudentGraph : uses
+PodFormation --> StudentGraph : uses
+
+@enduml
